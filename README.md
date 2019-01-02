@@ -19,10 +19,11 @@
 
 ## Visual Studio 2017 Thrift 라이브러리 설치
 1. [VCPKG](https://github.com/Microsoft/vcpkg)를 clone하고, bootstrap-vcpkg.bat을 실행한다.
-2. vcpkg install thrift 명령으로 thrift를 설치한다.
+2. vcpkg install thrift 명령으로 thrift를 설치한다(x86 모드로 설치된다).
 3. vcpkg integrate install 명령으로 thrift를 MSBuild와 연동한다.
 
 ## Visual Studio 2017 예제
 1. console project를 생성하고, pre-comipiled header를 사용하지 않도록 한다.
 2. main program은 [thrift guide](https://thrift.apache.org/tutorial/cpp)를 참조한다.
 3. thrift로 생성한 코드를 포함한다.
+(x86 모드로 빌드해야 한다)
